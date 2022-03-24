@@ -160,7 +160,7 @@ img {
 .btn-primary:focus-visible {
   outline: 2px solid var(--purple);
   outline-offset: 2px;
-} 
+}
 
 .btn-primary:disabled {
   opacity: 0.3;
@@ -504,7 +504,7 @@ img {
   line-height: 18px;
   letter-spacing: normal;
   text-transform: none;
-  
+
   list-style: none;
   background-color: var(--yellow-light);
 }
@@ -782,9 +782,10 @@ img {
 
 /* ===== Slider ===== */
 .slider {
-  margin-bottom: 70px;
+  margin-top: -36px;
+  margin-bottom: 61px;
 
-  background-image: linear-gradient(180deg, var(--yellow-light) 113px, var(--white) 113px);
+  background-image: linear-gradient(180deg, var(--yellow-light) 150px, var(--white) 150px);
   overflow: hidden;
 }
 
@@ -806,9 +807,9 @@ img {
   position: relative;
   display: grid;
   grid-template-columns: 560px auto;
-  grid-template-rows: 59px 100px 82px 40px min-content;
+  grid-template-rows: 94px 99px 82px 40px min-content;
   gap: 29px 40px;
-  grid-template-areas: 
+  grid-template-areas:
   "img ."
   "img title"
   "img text"
@@ -877,8 +878,8 @@ img {
 .slider__item-title::after {
   position: absolute;
   content: "01";
-  right: 50px;
-  top: -120px;
+  right: 49px;
+  top: -115px;
   z-index: -1;
 
   display: block;
@@ -915,7 +916,6 @@ img {
   right: 0;
   margin: 0;
   padding: 0;
-  padding-right: 5px;
 
   list-style: none;
 }
@@ -954,6 +954,7 @@ img {
 .pagination__item:focus-within {
   outline: 2px solid var(--purple);
   outline-offset: 2px;
+  z-index: 1;
 }
 
 .pagination__link--active {
@@ -964,6 +965,7 @@ img {
   grid-area: list;
   display: flex;
   margin: 0;
+  margin-top: -25px;
   padding: 0;
 
   list-style: none;
@@ -1046,7 +1048,7 @@ img {
   align-items: center;
   justify-content: center;
   height: 160px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 
   background-color: var(--yellow-light);
 
@@ -1084,7 +1086,7 @@ img {
   width: 287px;
   margin: 0;
   padding: 0;
-  padding-top: 69px;
+  padding-top: 64px;
 
   list-style: none;
 }
@@ -1098,7 +1100,7 @@ img {
   top: 0;
   right: 0;
   background-color: var(--black);
-} 
+}
 
 .service__list-tab {
   display: block;
@@ -1179,7 +1181,7 @@ img {
 
 /* ===== Delivery ===== */
 .delivery {
-  margin-bottom: 70px;
+  margin-bottom: 68px;
 }
 
 .delivery__btn {
@@ -1252,9 +1254,9 @@ img {
 
   font-family: Raleway, serif;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 800;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.9px;
   color: var(--black);
   text-transform: uppercase;
 }
@@ -1298,7 +1300,7 @@ img {
   display: grid;
   grid-template-columns: 500px 532px;
   gap: 0 128px;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
 }
 
 /* = About = */
@@ -1330,7 +1332,7 @@ img {
 
 .about__list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
   padding: 0;
 
   line-height: 20px;
@@ -1367,9 +1369,9 @@ img {
 }
 
 .about__link {
-  max-width: 260px;
-  padding-left: 18.5px;
-  padding-right: 18.5px;
+  max-width: 270px;
+  padding-left: 23.5px;
+  padding-right: 23.5px;
 }
 
 /* = Contacts = */
@@ -1386,6 +1388,8 @@ img {
 
 .contacts__address {
   font-style: normal;
+
+  margin-bottom: 35px;
 }
 
 .contacts__address-title {
@@ -1438,18 +1442,20 @@ img {
 
 .container--subscription {
   display: grid;
-  grid-template-columns: 412px 212px 160px;
-  gap: 134px 188px;
+  grid-template-columns: 412px 197px 160px;
+  gap: 143px 196px;
   align-items: center;
 }
 
 .subscription__title {
   grid-column: 1 / 2;
+  padding-left: 7px;
 }
 
 .subscription__info {
   grid-column: 2 / 4;
   margin: 0;
+  margin-top: 10px;
   padding: 0;
 }
 
@@ -1468,7 +1474,7 @@ img {
   background-color: transparent;
   border: none;
   border-bottom: 3px solid var(--silver);
-  
+
 }
 
 .subscription__input::placeholder {
@@ -1546,10 +1552,11 @@ img {
 
 .container--footer {
   display: grid;
-  grid-template-columns: 240px minmax(auto, 676px) 175px;
-  grid-template-rows: auto 48px min-content;
+  grid-template-columns: 240px minmax(auto, 676px) 247px;
+  grid-template-rows: auto 53px min-content;
   align-items: baseline;
   gap: 35px;
+  column-gap: normal;
 }
 
 .footer__logo {
@@ -1619,6 +1626,8 @@ img {
 }
 
 .footer__phone {
+  justify-self: flex-end;
+
   font-size: 16px;
   line-height: 20px;
   text-decoration: underline;
@@ -1711,7 +1720,6 @@ img {
   justify-content: center;
   display: flex;
   margin: 0;
-  margin-right: 65px;
   padding: 0;
 
   list-style: none;
@@ -1838,7 +1846,7 @@ img {
 }
 
 .main-inner__breadcrumbs-item:last-child .main-inner__breadcrumbs-link:hover,
-.main-inner__breadcrumbs-item:last-child .main-inner__breadcrumbs-link:active, 
+.main-inner__breadcrumbs-item:last-child .main-inner__breadcrumbs-link:active,
 .main-inner__breadcrumbs-item:last-child .main-inner__breadcrumbs-link:focus,
 .main-inner__breadcrumbs-item:last-child .main-inner__breadcrumbs-link:focus-visible {
   outline: none;
@@ -2418,7 +2426,7 @@ img {
 
 .catalog__price {
   display: inline-block;
-  margin-top: -4px; 
+  margin-top: -4px;
 }
 
 .catalog__btn {
@@ -2615,7 +2623,7 @@ img {
   grid-template-columns: 360px 140px 180px;
   grid-template-rows: repeat(3, auto);
   gap: 42px 40px;
-  grid-template-areas: 
+  grid-template-areas:
       "name email email"
       "text text count"
       "button . .";
