@@ -186,7 +186,7 @@ img {
 
   display: grid;
   grid-template-columns: 517px 497px;
-  grid-template-rows: repeat(2, auto) 50px;
+  grid-template-rows: repeat(2, auto) max-content;
   column-gap: 26px;
   row-gap: 30px;
   margin: 0 auto;
@@ -367,6 +367,11 @@ img {
   z-index: 2;
 }
 
+.header__control-item--user {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .control-name,
 .control-login {
   padding-left: 27px;
@@ -377,11 +382,9 @@ img {
 }
 
 .control-name {
+  display: inline-block;
+  max-width: 150px;
   margin-right: 28px;
-}
-
-.control-logout {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .control-compare {
@@ -439,6 +442,10 @@ img {
   outline-offset: 2px;
 }
 
+.control-logout {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .nav {
   grid-column: 1 / 3;
   align-self: center;
@@ -459,8 +466,8 @@ img {
   margin-right: auto;
 }
 
-.nav__item:nth-child(n+2):not(:last-child) {
-  margin-right: 45px;
+.nav__item:nth-child(n+2) {
+  margin-left: 45px;
 }
 
 .nav__link {
@@ -651,6 +658,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 215px;
 
   font: inherit;
   color: inherit;
@@ -782,10 +790,10 @@ img {
 
 /* ===== Slider ===== */
 .slider {
-  margin-top: -36px;
-  margin-bottom: 61px;
+  margin-top: -10px;
+  margin-bottom: 60px;
 
-  background-image: linear-gradient(180deg, var(--yellow-light) 150px, var(--white) 150px);
+  background-image: linear-gradient(180deg, var(--yellow-light) 123px, var(--white) 123px);
   overflow: hidden;
 }
 
@@ -807,7 +815,7 @@ img {
   position: relative;
   display: grid;
   grid-template-columns: 560px auto;
-  grid-template-rows: 94px 99px 82px 40px min-content;
+  grid-template-rows: 65px 99px 82px 40px min-content;
   gap: 29px 40px;
   grid-template-areas:
   "img ."
@@ -823,10 +831,14 @@ img {
   align-self: start;
 }
 
+.slider__img {
+  margin-top: -28px;
+}
+
 .slider__item-inner-left {
   position: absolute;
   left: 30px;
-  top: 211px;
+  top: 183px;
   display: block;
   width: 20px;
   height: 60px;
@@ -837,7 +849,7 @@ img {
 .slider__item-inner-right {
   position: absolute;
   right: 0;
-  top: 211px;
+  top: 183px;
 
   display: block;
   width: 20px;
@@ -912,7 +924,7 @@ img {
   position: absolute;
   display: flex;
   max-width: 250px;
-  top: 375px;
+  top: 347px;
   right: 0;
   margin: 0;
   padding: 0;
@@ -2535,6 +2547,7 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: rgba(68, 68, 68, 0.3);
+  text-decoration: none;
 
   transition: all 0.2s linear;
 }
