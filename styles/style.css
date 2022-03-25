@@ -1695,8 +1695,8 @@ img {
   opacity: 0.3;
 }
 
-.footer__list-item:focus,
-.footer__list-item:focus-visible {
+.footer__list-link:focus,
+.footer__list-link:focus-visible {
   outline: 2px solid var(--purple);
   outline-offset: 2px;
 }
@@ -2094,6 +2094,11 @@ img {
   appearance: none;
 }
 
+.catalog__form-checkbox:focus,
+.catalog__form-checkbox:focus-visible {
+  outline: none;
+}
+
 .catalog__form-check {
   position: absolute;
   margin-top: 4px;
@@ -2169,6 +2174,11 @@ img {
   position: absolute;
 
   appearance: none;
+}
+
+.catalog__form-radio:focus,
+.catalog__form-radio:focus-visible {
+  outline: none;
 }
 
 .catalog__form-radiotype {
